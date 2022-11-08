@@ -18,6 +18,8 @@
 >kubectl describe pod [ELASTICSEARCH_PODNAME] -n kube-system  
 >kubectl logs [ELASTICSEARCH_PODNAME] -n kube-system  
 
+Refer to Link: https://www.elastic.co/elasticsearch
+
 ## Deploy Logstash  
 >kubectl apply -f logstash-deployment.yaml  
 
@@ -25,6 +27,8 @@
 >kubectl get pods -n kube-system  
 >kubectl describe pod [LOGSTASH_PODNAME] -n kube-system  
 >kubectl logs [LOGSTASH_PODNAME] -n kube-system  
+
+Refer to Link: https://www.elastic.co/logstash/
 
 ## Deploy Filebeat  
 >kubectl apply -f filebeat-ds.yaml  
@@ -34,6 +38,8 @@
 >kubectl describe pod [FILEBEAT_PODNAME] -n kube-system  
 >kubectl logs [FILEBEAT_PODNAME] -n kube-system  
 
+Refer to Link: https://www.elastic.co/guide/en/beats/filebeat/6.4/running-on-kubernetes.html
+
 ## Deploy Metricbeat  
 >kubectl apply -f metricbeat-ds.yaml  
 
@@ -42,6 +48,8 @@
 >kubectl describe pod [METRICBEAT_PODNAME] -n kube-system  
 >kubectl logs [METRICBEAT_PODNAME] -n kube-system  
 
+Refer to Link: https://www.elastic.co/guide/en/beats/metricbeat/6.4/running-on-kubernetes.html
+
 ## Deploy Kibana  
 >kubectl apply -f kibana-deployment.yaml  
 
@@ -49,6 +57,8 @@
 >kubectl get pods -n kube-system  
 >kubectl describe pod [KIBANA_PODNAME] -n kube-system  
 >kubectl logs [KIBANA_PODNAME] -n kube-system  
+
+Refer to Link: https://www.elastic.co/kibana/
 
 ## Deploy Curator CronJob  
 >kubectl apply -f curator-cronjob.yaml  
